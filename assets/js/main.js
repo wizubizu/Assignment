@@ -4,3 +4,6 @@ $('#openSidebar').click(function(){
 		$('#closebtn').click(function(){
 			$('.leftbar').removeClass('biger');
 		});
+
+
+		
