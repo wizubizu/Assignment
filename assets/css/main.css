@@ -223,6 +223,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   margin-top: 40px;
 }
 
+.__leftlinkhead img{
+  width: 21px;
+}
+
 .leftbar p {
     /*background-color: #f1f1f1;*/
     padding: 13px 0;
