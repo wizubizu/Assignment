@@ -1,0 +1,636 @@
+/*=================================================================
+	Basic Setup css
+==================================================================*/
+html {
+    font-size: 100%;
+    min-height: 100%;
+}
+
+body {
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: '', Poppins-Regular;
+	font-size: 14px;
+	color: #222222;
+	font-weight: normal;
+	overflow-x: hidden;
+	line-height: 20px;
+}
+
+
+@font-face{
+  font-family: 'Poppins-Regular';
+  src: url('../../poppins/Poppins-Regular.ttf');
+}
+@font-face{
+  font-family: 'Sofia Pro Regular';
+  src: url('../../poppins/Sofia Pro Regular.ttf');
+}
+@font-face{
+  font-family: 'Goku';
+  src: url('../../poppins/Goku.ttf');
+}
+@font-face{
+  font-family: 'sofiapro-light';
+  src: url('../../poppins/sofiapro-light.otf');
+}
+@font-face{
+  font-family: 'Poppins-Medium';
+  src: url('../../poppins/Poppins-Medium.ttf');
+}
+
+@font-face{
+  font-family: 'Poppins-SemiBold';
+  src: url('../../poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: 'Poppins-SemiBoldItalic';
+  src: url('../../poppins/Poppins-SemiBoldItalic.ttf');
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited{
+	text-decoration:none;
+	/*background:transparent;*/
+	outline:none;
+	color:inherit;
+}
+
+/*a:hover{
+	color: #663fb5 !important;
+}*/
+
+button:focus{
+	outline:none;
+}
+
+li{
+	/*list-style:none;*/
+}
+
+article,
+figure,
+footer,
+header,
+nav,
+section{
+	display:block
+}
+
+select:focus {
+    outline-offset:0;
+}
+
+/* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
+@-webkit-viewport {
+	width: device-width;
+}
+@-moz-viewport {
+	width: device-width;
+}
+@-ms-viewport {
+	width: device-width;
+}
+@-o-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+
+
+
+a:focus, a:hover {
+    	text-decoration:none !important;
+	}
+
+
+.navbar {
+    /*position: relative;*/
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.navbar-toggle {
+  /*border: 2px solid #FFFFFF;*/
+  color: #ffffff;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.header-body {
+  height: calc(100vh - 80px);
+}
+
+#form .input-group input[class="form-control"] {
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 17px;
+  color:#222;
+  padding:7px 12px;
+  border-right-width:0;
+}
+.box-s{
+  /*box-shadow: 0px 5px 5px #888888;*/
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+#form .input-group select[class="form-control"] {
+  border-radius:50px;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+  font-size:17px;
+  width:100px;
+  color:#222;
+  border-left-width:0;
+}
+
+.form-control:focus {
+    border:1px solid #ccc !important;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(254, 86, 33, .6) !important;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 2px rgba(0, 0, 0, .6) !important;
+}
+
+.form-group1 .form-control:focus {
+    border:none!important;
+    outline:0;
+    -webkit-box-shadow:none !important;
+    box-shadow: none !important;
+    border-bottom:1px solid brown !important;
+}
+
+
+	
+
+
+::-webkit-scrollbar{
+	height: 7px;
+	width: 7px;
+}
+::-webkit-scrollbar-track{
+	border-radius: 50px;
+	/*-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.1);*/
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 1px;
+	background-color: #a7a7a7;
+}
+
+/*hover on dropdown and drop*/
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+/*hover on dropdown and drop end*/
+
+/*=================================================================
+  Dashboard
+==================================================================*/
+/*adminsection*/
+.leftbar{
+  position: fixed;
+  padding-top: 16px;
+  left: 0%;
+  top: 0%;
+  background-color: #0e1523;
+  border-right: 1px solid #eff3f2;
+  width: 8%;
+  height: 100%;
+  transition: all .6s ease;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.leftbar::-webkit-scrollbar {
+    width: 0px;
+}
+.__leftlinkhead{
+  margin-top: 40px;
+}
+
+.leftbar p {
+    /*background-color: #f1f1f1;*/
+    padding: 13px 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #ffffff;
+    /*cursor: pointer;*/
+    text-align: center;
+    
+}
+
+.leftbar i {
+    float: left;
+    padding: 4px;
+}
+.activedashboard {
+      background: #f1f1f1;
+    color: #333333 !important;
+    border-left: 5px solid #ef7c74 !important;
+    width: 100%;
+    font-weight: 400;
+}
+
+.__dashhrside{
+  margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #585757;
+}
+
+
+#openSidebar{
+  display: none;
+}
+
+
+.biger{
+  width: 35% ;
+  transform: translate(0px) !important;
+  z-index:1  !important;
+  
+}
+img#closebtn {
+    position: absolute;
+    top: 3%;
+    color: indianred;
+    font-size: 21px;
+    display: none;
+    cursor: pointer;
+    right: 5%;
+    width: 15px;
+}
+
+.showme {
+  display: none;
+}
+
+.showhim:hover .showme {
+  display: block;
+    position: fixed;
+    left: 203px;
+    margin-top: -67px;
+    border: 1px solid;
+    padding: 23.3px 10px;
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+  
+.leftbar{
+  transform: translate(-300px);
+}
+#openSidebar{
+  display: block !important;
+  cursor: pointer !important;
+}
+img#closebtn {
+   display: block;
+}
+}
+@media screen and (max-width: 568px) {
+  
+.biger{
+  width: 60% ;
+  transform: translate(0px) !important;
+  z-index:1  !important;
+  
+}
+
+.leftbar{
+  transform: translate(-1000px);
+}
+#openSidebar{
+  display: block !important;
+  cursor: pointer !important;
+}
+i#closebtn {
+   display: block;
+}
+
+
+.mr-125 { right:125px !important; }
+
+}
+
+
+
+/*=================================================================
+  Custom Css
+==================================================================*/
+
+.mt-5p{
+  margin-top:5%;
+}
+
+.__logincard{
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    background: #fbfbfb;
+    padding: 20px 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 106px;
+}
+
+.__logincard p{
+  color: #999;
+}
+
+.__logincard1{
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+    background: #fbfbfb;
+    padding: 20px 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top:4%;
+}
+
+.__logincard1 p:nth-child(1){
+  font-weight: 600;
+    font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.__logincard1 p:nth-child(2){
+  font-size: 11px;
+    color: #999;
+}
+
+.__logincard1 form{
+  margin-top:10%;
+}
+.__logincard1 button{
+  color: #fff;
+    background-color: #3cda79;
+    border-color: #3cda79;
+    /*padding: 4px 25px;*/
+}
+
+.__logincard1 button:hover{
+  color: #fff;
+    background-color: #3cda79;
+    border-color: #3cda79;
+    /*padding: 4px 25px;*/
+}
+
+.__proact{
+  margin-top: 4%;
+  background: #eff6f9;
+  border-radius: 8px;
+  margin-left: 14px;
+}
+
+.__projact{
+  padding: 10px 20px 0;
+  margin-bottom: 5px;
+}
+.__projacthr{
+  margin-top: 0;
+}
+
+.__dropbtn{
+  border-radius:50px;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+.__dropbtn:hover{
+  background: transparent;
+  border-radius:50px;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+
+.__dropbtn1{
+  border-radius:50px;
+  background: #7eafda;
+  color: #ffffff;
+  border-color: #7eafda;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+.__dropbtn1:hover{
+  border-radius:50px;
+  background: #7eafda;
+  color: #ffffff;
+  border-color: #7eafda;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+.__dropbtn2{
+  border-radius:50px;
+  background: #ff6b6b;
+  color: #ffffff;
+  border-color: #ff6b6b;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+
+.__dropbtn2:hover{
+  border-radius:50px;
+  background: #ff6b6b;
+  color: #ffffff;
+  border-color: #ff6b6b;
+  padding: 4px 12px;
+  margin-left: 17px !important;
+}
+
+.__dashdropdow{
+  margin-top: 28px;
+}
+
+.__bellicon{
+  font-size:17px;
+}
+
+.__sup{
+  border-radius: 50%;
+  padding: 0px 5px;
+  font-size: 10px;
+  background: #d00f0f;
+  color: #ffffff;
+  top: -12px;
+  left: -7px;
+}
+
+.__chartimg{
+  padding: 10px 20px;
+}
+
+.__progre{
+   /*margin-top: 4%;*/
+  background: #eff6f9;
+  border-radius: 8px;
+  margin-left: 14px;
+}
+
+.progress--circle {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.progress--circle:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: white;
+}
+.progress--circle:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #5982a5;
+}
+
+.progress__number {
+  position: absolute;
+  top: 36%;
+  width: 100%;
+  line-height: 1;
+  margin-top: -0.75rem;
+  text-align: center;
+  font-size: 30px;
+  color: #777;
+  font-weight: 600;
+}
+
+.progress__number span:nth-child(1){
+  font-size:15px;
+  color: #ddd;
+  font-weight:200;
+}
+
+
+/**
+* $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
+*/
+.progress--bar.progress--25:after {
+  width: 25%;
+}
+
+.progress--circle.progress--25:after {
+  background-image: linear-gradient(45deg, #5982a5 26%, transparent 36%, transparent), linear-gradient(184deg, #5cb85c 51%, #ddd 59%, #ddd);
+}
+
+.progress--bar.progress--50:after {
+  width: 50%;
+}
+
+.progress--circle.progress--50:after {
+  background-image: linear-gradient(-243deg, #FF9800 24%, transparent 36%, transparent), linear-gradient(18deg, #f36092 50%, #ddd 50%, #ddd);
+}
+
+.progress--50{
+  margin-left: 80px;
+}
+
+.progress--bar.progress--75:after {
+  width: 75%;
+}
+
+.progress--circle.progress--75:after {
+  background-image: linear-gradient(86deg, #63B8FF 27%, transparent 43%, transparent), linear-gradient(417deg, #2196F3 48%, #ddd 33%, #ddd);
+}
+
+.progress--75{
+  margin-left: 80px;
+}
+
+
+
+
+
+/*checkbox*/
+.checkbox {
+  padding-left: 6px; 
+}
+.checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; 
+    font-size: 12px;
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out; 
+}
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 0;
+  font-size: 11px;
+  color: #555555; 
+}
+.checkbox input[type="checkbox"] {
+    opacity: 0; 
+  }
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; 
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f00c"; 
+}
+.checkbox input[type="checkbox"]:disabled + label {
+  opacity: 0.65; 
+}
+.checkbox input[type="checkbox"]:disabled + label::before {
+      background-color: #eeeeee;
+      cursor: not-allowed; 
+    }
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%; 
+}
+.checkbox.checkbox-inline {
+  margin-top: 0; 
+}
+
+.checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c; 
+}
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #fff; 
+}
+/*end*/
