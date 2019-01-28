@@ -91,7 +91,17 @@
 
   @media screen and (max-width: 560px){
 
-  	
+    .__proact {
+    margin-top: 20%;
+    margin-left: 0;
+  }
+
+  .progress--50 {
+    margin-left: 17px;
+  }
+  .progress--75 {
+    margin-left: 17px;
+  }
 
 }
 

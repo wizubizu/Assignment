@@ -171,9 +171,9 @@
 								      	</ul>
 								    </div>
 								</div>
-							</div>
+							</div><br>
 							<div class="__chartimg">
-								<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+								<div id="container" style="min-width: 100%; height: 400px; margin: 0 auto"></div>
 							</div>
 						</div>
 
@@ -199,8 +199,16 @@
 								<div class="__progre">
 									<div class="__chartimg">
 										<p class="text-center">Performance over the<br> last 2 months</p>
-										<p class="text-center">28<sup>%</sup></p>
-										<img src="assets/img/chat.png" class="" width="100%">
+										<p class="__percent">28<sup>%</sup></p>
+										<div class="sc-gauge">
+										    <div class="sc-background">
+										      	<div class="sc-percentage"></div>
+										      	<div class="sc-mask"></div>
+										      	<!-- <span class="sc-value">88</span> -->
+										    </div>
+									    	<span class="sc-min">Minimum</span>
+									    	<span class="sc-max">Maximum</span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -209,13 +217,13 @@
 							<div class="col-lg-4 col-md-4 col-sm-4">
 								<div class="__progre">
 									<div class="__chartimg">
-										<table class="table-condensed table-bordered table-striped">
+										<table class="table-condensed table-bordered table-striped text-center" width="100%">
 						                <thead>
 						                    <tr>
-						                      <th colspan="7">
+						                      <th colspan="12">
 						                        <span class="btn-group">
 						                            <a class="btn"><i class="fas fa-angle-left"></i></a>
-						                        	<a class="btn active">February 2012</a>
+						                        	<a class="btn active">June</a>
 						                        	<a class="btn"><i class="fas fa-angle-right"></i></a>
 						                        </span>
 						                      </th>
@@ -284,7 +292,7 @@
 							<div class="col-lg-8 col-md-8 col-sm-8">
 								<div class="__progre">
 									<div class="__chartimg">
-										<canvas data-gauge-chart="" data-gauge-data="gauge1.gaugeData" data-gauge-options="gauge1.gaugeOptions" style="width: 220px; height: 110px; " class="ng-isolate-scope"></canvas>
+										 
 									</div>
 								</div>
 							</div>
@@ -309,62 +317,96 @@
 	<script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script type="text/javascript">
     	Highcharts.chart('container', {
-  chart: {
-    type: 'areaspline'
-  },
-  title: {
-    text: 'Average fruit consumption during one week'
-  },
-  legend: {
-    layout: 'vertical',
-    align: 'left',
-    verticalAlign: 'top',
-    x: 150,
-    y: 100,
-    floating: true,
-    borderWidth: 1,
-    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
-  },
-  xAxis: {
-    categories: [
-      'Monday',
-      'Tuesday',
-      'Wednesday',
-      'Thursday',
-      'Friday',
-      'Saturday',
-      'Sunday'
+		  chart: {
+		    type: 'areaspline'
+		  },
+		  title: {
+		    text: 'Average fruit consumption during one week'
+		  },
+		  legend: {
+		    layout: 'vertical',
+		    align: 'left',
+		    verticalAlign: 'top',
+		    x: 150,
+		    y: 100,
+		    floating: true,
+		    borderWidth: 1,
+		    backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+		  },
+		  xAxis: {
+		    categories: [
+		      'Monday',
+		      'Tuesday',
+		      'Wednesday',
+		      'Thursday',
+		      'Friday',
+		      'Saturday',
+		      'Sunday'
+		    ],
+		    plotBands: [{ // visualize the weekend
+		      from: 4.5,
+		      to: 6.5,
+		      color: 'rgba(68, 170, 213, .2)'
+		    }]
+		  },
+		  yAxis: {
+		    title: {
+		      text: 'Fruit units'
+		    }
+		  },
+		  tooltip: {
+		    shared: true,
+		    valueSuffix: ' units'
+		  },
+		  credits: {
+		    enabled: false
+		  },
+		  plotOptions: {
+		    areaspline: {
+		      fillOpacity: 0.5
+		    }
+		  },
+		  series: [{
+		    name: 'John',
+		    data: [3, 4, 3, 5, 4, 10, 12]
+		  }, {
+		    name: 'Jane',
+		    data: [1, 3, 4, 3, 3, 5, 4]
+		  }]
+		});
+    </script>
+
+    <script type="text/javascript">
+    	var data = {
+    labels: [
+        "Red"
     ],
-    plotBands: [{ // visualize the weekend
-      from: 4.5,
-      to: 6.5,
-      color: 'rgba(68, 170, 213, .2)'
-    }]
-  },
-  yAxis: {
-    title: {
-      text: 'Fruit units'
+    datasets: [
+        {
+            data: [75],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+
+var ctx = document.getElementById("myChart");
+
+// And for a doughnut chart
+var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: {
+    	rotation: 1 * Math.PI,
+      circumference: 1 * Math.PI
     }
-  },
-  tooltip: {
-    shared: true,
-    valueSuffix: ' units'
-  },
-  credits: {
-    enabled: false
-  },
-  plotOptions: {
-    areaspline: {
-      fillOpacity: 0.5
-    }
-  },
-  series: [{
-    name: 'John',
-    data: [3, 4, 3, 5, 4, 10, 12]
-  }, {
-    name: 'Jane',
-    data: [1, 3, 4, 3, 3, 5, 4]
-  }]
 });
     </script>
 
