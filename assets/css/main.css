@@ -372,7 +372,7 @@ i#closebtn {
 .__logincard1 form{
   margin-top:10%;
 }
-.__logincard1 button{
+.__logincard1 a{
   color: #fff;
     background-color: #3cda79;
     border-color: #3cda79;
