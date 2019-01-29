@@ -59,7 +59,7 @@
 										Campaigns
 									</p>
 									<div class="showme">
-										<a href="" class="">Add New</a>
+										<a data-toggle="modal" href='#modal-id' class="">Add New</a>
 										<a href="" class="">View All</a>
 									</div>
 								</div>
@@ -131,6 +131,36 @@
 							<hr class="__projacthr">
 							<div class="row">
 								<div class="col-lg-10 col-md-10 col-sm-9">
+									<!-- <div class="row">
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<select name="" id="input" class="form-control" required="required">
+									        	<option value="">Month</option>
+									        	<option value="">Range</option>
+									        	<option value="">Last</option>
+									        	<option value="">Current</option>
+									        </select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<select name="" id="input" class="form-control" required="required">
+									        	<option value="">Range</option>
+									        	<option value="">Last</option>
+									        	<option value="">Current</option>
+									        </select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<select name="" id="input" class="form-control" required="required">
+									        	<option value="">Last</option>
+									        	<option value="">Current</option>
+									        </select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-3">
+											<select name="" id="input" class="form-control" required="required">
+									        	<option value="">Current</option>
+									        </select>
+										</div>
+									</div> -->
+
+							        
 									<div class="btn-group">
 								      	<button type="button" class="btn __dropbtn btn-default dropdown-toggle" data-toggle="dropdown">
 								            Month&nbsp; &nbsp; <span class=""><i class="fas fa-angle-down"></i></span>
@@ -223,15 +253,7 @@
 									<div class="__chartimg">
 										<p class="text-center">Performance over the<br> last 2 months</p>
 										<p class="__percent">28<sup>%</sup></p>
-										<div class="sc-gauge">
-										    <div class="sc-background">
-										      	<div class="sc-percentage"></div>
-										      	<div class="sc-mask"></div>
-										      	<!-- <span class="sc-value">88</span> -->
-										    </div>
-									    	<span class="sc-min">Minimum</span>
-									    	<span class="sc-max">Maximum</span>
-										</div>
+										<div id="chartdiv"></div>
 									</div>
 								</div>
 							</div>
@@ -327,6 +349,137 @@
 		</div>
 
 
+		<!-- modal -->
+		<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+		<div class="modal fade" id="modal-id">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content __modacont">
+					<div class="modal-header __bordernon">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">ADD NEW CAMPAIGN</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-5 col-sm-5">
+								<form action="" method="POST" role="form">
+									<div class="form-group">
+										<input type="text" class="form-control __modform" id="" placeholder="Name">
+									</div>
+
+									<div class="form-group">
+										<input type="text" class="form-control __modform" id="" placeholder="Brand">
+									</div>
+
+									<div class="form-group">
+										<input type="text" class="form-control __modform" id="" placeholder="Product">
+									</div>
+								
+								</form>
+
+								<p>Start Date</p>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Month</option>
+								        	<option value="">Range</option>
+								        	<option value="">Last</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Day</option>
+								        	<option value="">Last</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Year</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+								</div>
+								<br>
+
+
+							    <p>End Date</p>
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Month</option>
+								        	<option value="">Range</option>
+								        	<option value="">Last</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Day</option>
+								        	<option value="">Last</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-4">
+										<select name="" id="input" class="form-control __selectmdy" required="required">
+								        	<option value="">Year</option>
+								        	<option value="">Current</option>
+								        </select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2"></div>
+							<div class="col-md-5 col-sm-5">
+								<p><strong>TARGET AUDIENCE:</strong></p>
+								<select name="" id="input" class="form-control __selectmdy1" >
+						        	<option value="">Both</option>
+						        	<option value="">Range</option>
+						        	<option value="">Last</option>
+						        	<option value="">Current</option>
+						        </select><br>
+
+						        <p><strong>AGE RANGE:</strong></p>
+								
+
+							    <p><strong>TERGET REGIONS:</strong></p>
+								<div class="__terche">
+									<div class="checkbox checkbox-success">
+				                        <input id="checkbox1" type="checkbox">
+				                        <label for="checkbox1">
+					                        Region 1
+				                        </label>
+				                    </div>
+			                        <div class="checkbox checkbox-success">
+				                        <input id="checkbox2" type="checkbox">
+				                        <label for="checkbox2">
+				                            Region 2
+			                        	</label>
+				                    </div>
+			                        <div class="checkbox checkbox-success">
+				                        <input id="checkbox3" type="checkbox">
+				                        <label for="checkbox3">
+				                            Region 3
+			                        	</label>
+				                    </div>
+			                        <div class="checkbox checkbox-success">
+				                        <input id="checkbox4" type="checkbox">
+				                        <label for="checkbox4">
+				                            Region 4
+			                        	</label>
+				                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer __bordernon">
+						<button type="button" class="btn __prebtn" data-dismiss="modal">Previous</button>
+						<button type="button" class="btn __nxtbtn">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 
 	
 
@@ -335,6 +488,10 @@
 
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script src="https://www.amcharts.com/lib/3/gauge.js"></script>
+
     <script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	<script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -400,37 +557,49 @@
     </script>
 
     <script type="text/javascript">
-    	var data = {
-    labels: [
-        "Red"
-    ],
-    datasets: [
-        {
-            data: [75],
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ]
-        }]
-};
-
-var ctx = document.getElementById("myChart");
-
-// And for a doughnut chart
-var myDoughnutChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: data,
-    options: {
-    	rotation: 1 * Math.PI,
-      circumference: 1 * Math.PI
-    }
-});
+   var gaugeChart = AmCharts.makeChart( "chartdiv", {
+  "type": "gauge",
+  "axes": [ {	
+  	"startAngle": -90,
+  	"endAngle": 90,
+    "axisThickness": 0,
+    "axisAlpha": 0,
+    "tickAlpha": 0,
+    "valueInterval": 20,
+    "labelsEnabled": false,
+    "radius": "50%",
+    "bands": [ {
+      "color": "#84b761",
+      "endValue": 33,
+      "startValue": 0,
+      "innerRadius": "105%",
+      "radius": "170%",
+    }, {
+      "color": "#fdd400",
+      "endValue": 66,
+      "startValue": 34,
+      "innerRadius": "105%",
+      "radius": "170%",
+    }, {
+      "color": "#cc4748",
+      "endValue": 100,
+      "innerRadius": "95%",
+      "startValue": 67,
+      "innerRadius": "105%",
+      "radius": "170%",
+    } ],
+    "endValue": 100
+  } ],
+  "arrows": [ {
+  	"innerRadius": "0%",
+    "radius": "150%",
+    "nailRadius": 0,
+    "value": 90
+  } ],
+  "export": {
+    "enabled": false
+  }
+} );
     </script>
 
 

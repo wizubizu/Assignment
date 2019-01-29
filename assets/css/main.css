@@ -616,6 +616,17 @@ i#closebtn {
     letter-spacing: 1.22px
 }
 
+.__modform{
+  border-radius: 15px;
+  height: 50px;
+  background: transparent;
+}
+
+.__modadropbtn {
+    border-radius: 50px;
+    padding: 4px 12px;
+ }
+
 
 .progress--circle {
   position: relative;
@@ -797,22 +808,11 @@ i#closebtn {
   top: -16px;
 }
 
-/*guarg*/
-.sc-gauge  { width:200px;
-margin: 0 auto; /*height:200px; margin:200px auto;*/ }
-.sc-background { position:relative; height:100px; margin-bottom:10px; background-color:#ddd; border-radius:150px 150px 0 0; overflow:hidden; text-align:center; }
-.sc-mask { position:absolute; top:20px; right:20px; left:20px; height:80px; background-color:#eff6f9; border-radius:150px 150px 0 0 }
-.sc-percentage { position: absolute;
-    top: 159px;
-    left: -157%;
-    width: 199%;
-    height: 133%;
-    margin-left: 0;
-    background-color: #f55a8e; }
-.sc-percentage { transform:rotate(158deg); transform-origin:top center; }
-.sc-min { float:left; }
-.sc-max { float:right; }
-.sc-value { position:absolute; top:50%; left:0; width:100%;  font-size:48px; font-weight:700 }
+/*guage*/
+#chartdiv {
+  width : 100%;
+  height  : 113px;
+}   
 
 .__clentimg img{
   width: 120px;
@@ -821,6 +821,48 @@ margin: 0 auto; /*height:200px; margin:200px auto;*/ }
 .__clentimg1 img{
   width: 90px;
 }
+
+.__selectmdy{
+  border-radius:50px;
+  background: transparent;
+}
+
+.__selectmdy1{
+  border-radius:50px;
+  background: transparent;
+  width: 200px;
+}
+
+.__modacont{
+  background: #eff6f9;
+  padding: 0 25px; 
+}
+
+.__bordernon{
+  border:0;
+}
+
+.__terche{
+  margin-left: 16px;
+}
+
+.__prebtn{
+      background: #d7e9f3;
+    text-align: center;
+    border-radius: 50px;
+    padding: 6px 50px;
+}
+
+.__nxtbtn{
+      background: #337ab7;
+      color: #ffffff !important;
+    text-align: center;
+    border-radius: 50px;
+    padding: 6px 50px;
+}
+
+
+
 
 
 
