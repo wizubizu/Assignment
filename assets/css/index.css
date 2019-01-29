@@ -192,6 +192,20 @@
   .progress--circle1:before {
     top: 20px;
     left: 20px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .__prebtn {
+    padding: 6px 25px;
+  }
+
+  .__nxtbtn {
+    padding: 6px 25px;
+  }
+
+  .__selectmdy {
+    margin-top: 10px;
   }
 
 
