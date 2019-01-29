@@ -286,7 +286,9 @@ img#closebtn {
 .showhim:hover .showme {
   display: block;
     position: fixed;
-    left: 203px;
+    left:108px;
+    background: #000000;
+    color: #ffffff;
     margin-top: -67px;
     border: 1px solid;
     padding: 23.3px 10px;
@@ -335,10 +337,22 @@ i#closebtn {
 /*=================================================================
   Custom Css
 ==================================================================*/
+.p-0{padding: 0;}
 
-.mt-5p{
-  margin-top:5%;
-}
+.p-1{padding: 1px;}
+
+.p-5{padding: 5px;}
+
+.pl-1{padding-left: 1px;}
+
+.pl-5{padding-left: 5px;}
+.pr-1{padding-right: 1px;}
+
+.pr-5{padding-right: 5px;}
+
+.mt-2p{margin-top:2%;}
+
+.mt-5p{margin-top:5%;}
 
 .__logincard{
       box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
@@ -399,6 +413,7 @@ i#closebtn {
 
 .__projact{
   padding: 10px 20px 0;
+  font-weight:600;
   margin-bottom: 5px;
 }
 .__projacthr{
@@ -484,6 +499,124 @@ i#closebtn {
       padding: 20px 0;
 }
 
+.__report{
+  padding: 10px 20px;
+}
+
+.__adbrandcard{
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.__adbr{
+  font-weight:600;
+  font-size: 11px;
+}
+
+.__adbrspan{
+  color:#E91E63; 
+}
+
+.__adbrspan1{
+  color:#2196F3; 
+}
+
+.__adbrp{
+  color:#E91E63;
+  font-size:30px;
+  font-weight:600;
+  margin-top: 35px; 
+}
+
+.__adbrp1{
+  color:#2196F3;
+  font-size:30px;
+  font-weight:600;
+  margin-top: 35px; 
+}
+
+.__reportdrop{
+  border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: #2196F3;
+    font-weight: 600;
+    padding: 4px 12px;
+    margin-left: 14px !important;
+    margin-top: 0;
+}
+
+.__reportdrop:hover{
+  border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: #2196F3;
+    font-weight: 600;
+    padding: 4px 12px;
+    margin-left: 14px !important;
+    margin-top: 0;
+}
+
+.__allcamp{
+  padding: 10px 25px;
+}
+
+.__addnew{
+  background: #d7e9f3;
+    text-align: center;
+    border-radius: 50px;
+    padding: 6px 5px;
+}
+
+.__search{
+  border-radius:50px;
+  padding-left: 25px;
+}
+.__serchimg{
+  width: 16px;
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+
+.__thead{
+  color: #bdc4c7;
+}
+
+.__tbody{
+  font-weight: 600;
+}
+
+.__tbody span{
+  font-size: 11px;
+    color: #bdc4c7;
+}
+
+.__status{
+  background: #5cb85c;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: center;
+    width: 70px;
+    letter-spacing: 1.22px
+}
+
+.__status1{
+  background: #ff5549;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-align: center;
+    width: 70px;
+    letter-spacing: 1.22px
+}
+
+
 .progress--circle {
   position: relative;
   display: inline-block;
@@ -566,6 +699,91 @@ i#closebtn {
   margin-left: 80px;
 }
 
+
+/*progress--circle report*/
+
+.progress--circle1 {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.progress--circle1:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+.progress--circle1:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #5982a5;
+}
+
+.progress__number {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  line-height: 1;
+  margin-top: -0.75rem;
+  text-align: center;
+  font-size: 20px;
+  color: #777;
+  font-weight: 600;
+}
+
+.progress__number span:nth-child(1){
+  font-size:13px;
+  color: #ddd;
+  font-weight:200;
+}
+
+.__prog--50 {
+    margin-left: 14px !important;
+}
+
+.__prog--75 {
+    margin-left: 14px !important;
+}
+
+
+/**
+* $step is set to 5 by default, meaning you can only use percentage classes in increments of five (e.g. 25, 30, 45, 50, and so on). This helps to reduce the size of the final CSS file. If you need a number that doesn't end in 0 or 5, you can change the text percentage while rounding the class up/down to the nearest 5.
+*/
+.progress--bar.progress--25:after {
+  width: 25%;
+}
+
+.progress--circle1.progress--25:after {
+  background-image: linear-gradient(45deg, #5982a5 26%, transparent 36%, transparent), linear-gradient(184deg, #5cb85c 51%, #ddd 59%, #ddd);
+}
+
+.progress--bar.progress--50:after {
+  width: 50%;
+}
+
+.progress--circle1.progress--50:after {
+  background-image: linear-gradient(-243deg, #FF9800 24%, transparent 36%, transparent), linear-gradient(18deg, #f36092 50%, #ddd 50%, #ddd);
+}
+
+.progress--bar.progress--75:after {
+  width: 75%;
+}
+
+.progress--circle1.progress--75:after {
+  background-image: linear-gradient(86deg, #63B8FF 27%, transparent 43%, transparent), linear-gradient(417deg, #2196F3 48%, #ddd 33%, #ddd);
+}
+
 .__percent{
   font-size: 30px;
     font-weight: 600;
@@ -596,7 +814,13 @@ margin: 0 auto; /*height:200px; margin:200px auto;*/ }
 .sc-max { float:right; }
 .sc-value { position:absolute; top:50%; left:0; width:100%;  font-size:48px; font-weight:700 }
 
-
+.__clentimg img{
+  width: 120px;
+  margin-top:20px;
+}
+.__clentimg1 img{
+  width: 90px;
+}
 
 
 
