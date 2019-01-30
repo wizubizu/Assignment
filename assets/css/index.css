@@ -81,6 +81,10 @@
   .progress__number span:nth-child(1) {
     font-size: 11px;
   }
+
+  .showhim:hover .showme {
+    left: 81px;
+  }
   
 
 }
@@ -92,7 +96,9 @@
 
 
 @media screen and (max-width: 992px){
-    
+    .showhim:hover .showme {
+    left: 144px;
+    }
 }
 
 
@@ -128,6 +134,13 @@
    width: 95px;
     height: 95px;
  }
+
+ .showhim:hover .showme {
+    left: 148px;
+    padding: 13.3px 4px;
+    font-size: 12px;
+    width: 120px;
+  }
 	
   
 
@@ -206,6 +219,13 @@
 
   .__selectmdy {
     margin-top: 10px;
+  }
+
+  .showhim:hover .showme {
+    left: 96px;
+    padding: 1.3px 7px;
+    font-size: 9px;
+    width: 94px;
   }
 
 

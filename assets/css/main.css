@@ -200,6 +200,9 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 /*=================================================================
   Dashboard
 ==================================================================*/
+.__bodybg{
+  background: #f1f1f1;
+}
 /*adminsection*/
 .leftbar{
   position: fixed;
@@ -214,6 +217,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: center;
+  z-index: 10000000000;
 }
 
 .leftbar::-webkit-scrollbar {
@@ -239,7 +243,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .leftbar i {
-    float: left;
+    /*float: left;*/
     padding: 4px;
 }
 .activedashboard {
@@ -286,14 +290,20 @@ img#closebtn {
 .showhim:hover .showme {
   display: block;
     position: fixed;
-    left:108px;
-    background: #000000;
+    left: 108px;
+    background: #232323;
     color: #ffffff;
-    margin-top: -67px;
-    border: 1px solid;
-    padding: 23.3px 10px;
-    text-align: center;
+    margin-top: -68px;
+    border: 1px solid #232323;
+    padding: 13.3px 28px;
+    /*text-align: center;*/
+    font-size: 12px;
+    width: 200px;
 }
+.showhim:hover{
+border-left: 5px solid #4CAF50 !important;
+}
+
 @media screen and (max-width: 992px) {
   
 .leftbar{
