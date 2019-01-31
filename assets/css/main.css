@@ -232,13 +232,20 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 .leftbar p {
-    /*background-color: #f1f1f1;*/
-    padding: 13px 0;
-    margin-bottom: 0;
-    font-size: 13px;
-    color: #ffffff;
-    /*cursor: pointer;*/
-    text-align: center;
+  /*background-color: #f1f1f1;*/
+  padding: 13px 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #ffffff;
+  /*cursor: pointer;*/
+  text-align: center;
+  border:0;
+  border-color: none;
+    
+}
+
+.leftbar p:hover {
+  border-left: 5px solid #4CAF50;
     
 }
 
@@ -299,9 +306,6 @@ img#closebtn {
     /*text-align: center;*/
     font-size: 12px;
     width: 200px;
-}
-.showhim:hover{
-border-left: 5px solid #4CAF50 !important;
 }
 
 @media screen and (max-width: 992px) {
